@@ -1,16 +1,17 @@
 #include "main.h"
 
-/****************** PRINT POINTER ******************/
+/************** PRINT POINTER *************/
 /**
- * print_pointer - Prints the value of a pointer variable
- * @types: List a of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed.
+ * print_pointer - Prints out the value of a pointer variable
+ * @types: List of arguments
+ * @buffer: Set the buffer array to handle print
+ * @flags:  Compputes the active flags
+ * @width: get the width
+ * @precision: Set the precision specification
+ * @size: Set the size specifier
+ * Return: Num of characters to be printed.
  */
+
 int print_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -52,16 +53,16 @@ int print_pointer(va_list types, char buffer[],
 		width, flags, padd, extra_c, padd_start));
 }
 
-/************************* PRINT NON PRINTABLE *************************/
+/*************** PRINT NON PRINTABLE ****************/
 /**
- * print_non_printable - Prints ascii codes in hexa of non printable chars
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed
+ * print_non_printable - Prints out the ascii codes in hexa of non printable chars
+ * @types: Listof  arguments
+ * @buffer: Set the buffer array to handle print
+ * @flags:  Computes the active flags
+ * @width: get the width
+ * @precision: Set the precision specification
+ * @size: Size of the specifier
+ * Return: Num of characters to be printed
  */
 int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
